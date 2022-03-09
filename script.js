@@ -1,6 +1,6 @@
 console.log ('JS OK!')
 
-
+// EMAIL
 //Chiedi all’utente la sua email,
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
@@ -11,28 +11,31 @@ console.log ('JS OK!')
 // la mail dell'utente è nella lista array?
 
 // messaggio sull'esito del controllo
+let email = [];
 
-const email = [];
+for(let i = 0; i < 1; i++){ //inizio il ciclo e capisco la lunghezza dell'array
+    value = prompt('Inserisci la tua e-mail'); //chiedo all'utente l'email
+    email.push(value); //aggiungo l'email al mio array "email"
+    console.log('La tua email è ' + (email [i])); //stampo l'array con l'email dell'utente
+} 
 
-for(let i= 0; i < email.length; i++){
-
-}
 
 
+// DADO
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 
-const dadoPc = [];
-const dadoUtente = [];
+let dadoPc = [];
+let dadoUtente = [];
 
 for(let i= 0; i < 1; i++){ // i<1 perché voglio solo un numero dei generati
-    const number = Math.floor((Math.random()*6)+1); //trovo random 6 numeri
+    let number = Math.floor((Math.random()*6)+1); //trovo random 6 numeri
     dadoPc.push(number); // aggiungo il numero al mio array dadoPC
     console.log('Dado pc è ' + (dadoPc [i])); // scrivo array e numero (i)
 }
 for(let i= 0; i < 1; i++){
-    const number = Math.floor((Math.random()*6)+1);
+    let number = Math.floor((Math.random()*6)+1);
     dadoUtente.push(number);
     console.log('Dado utente è ' + (dadoUtente [i]));
 }
