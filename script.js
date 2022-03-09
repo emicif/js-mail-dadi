@@ -12,13 +12,22 @@ console.log ('JS OK!')
 
 // messaggio sull'esito del controllo
 let email = [];
+let emailAccesso = ["emanuela.cifolelli@gmail.com"];
 
 for(let i = 0; i < 1; i++){ //inizio il ciclo e capisco la lunghezza dell'array
     value = prompt('Inserisci la tua e-mail'); //chiedo all'utente l'email
     email.push(value); //aggiungo l'email al mio array "email"
     console.log('La tua email è ' + (email [i])); //stampo l'array con l'email dell'utente
-} 
-
+} /*if ((email.length) === (emailAccesso.length)) { //se array email è uguale all'array emailAccesso - in questo modo sono SEMPRE UGUALI, perché vedo la lunghezza dell'array
+    console.log ('ok');
+} else {
+    console.log ('NO OK')
+}*/
+    if(emailAccesso.includes(value)) { // controllo se all'interno dell'array emailAccesso c'è value (value = email inserita dall'utente)
+        console.log ("Ok, sei già un utente registrato")
+    } else {
+        console.log ("Registrati!!")
+    }
 
 
 // DADO
